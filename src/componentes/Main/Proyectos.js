@@ -1,53 +1,55 @@
+import gorro from "../../img/gorro.jpg"
+import hoodie from "../../img/hoodie.jpg"
+import lapicera from "../../img/Lapiceras.jpeg"
+import lapices from "../../img/Lapices.jpg"
 function Proyectos(){
     const proyectos=[
     {
-        img:"",
+        img:gorro,
         titulo:"Ecommerce",
         url:"",
-        texto_alt:"Imagen del ecommerce"
+        img_alt:"Imagen del ecommerce",
+        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
     },
     {
-        img:"",
+        img:hoodie,
         titulo:"Restaurante",
         url:"",
-        texto_alt:""
+        img_alt:"Imagen de la paginad web del restaurante",
+        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
     },
     {
-        img:"",
+        img:lapicera,
         titulo:"ReciclaYa!",
         url:"",
-        texto_alt:"Imagen de sitio web Ecologico"
+        img_alt:"Imagen de sitio web Ecologico",
+        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
     },
     {
-        img:"",
+        img:lapices,
         titulo:"Reiki",
         url:"",
-        texto_alt:"Imagen de sitio web reiki"
+        img_alt:"Imagen de sitio web reiki",
+        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
     }
 ]
     return(
     <div>
-        <h2>Proyectos</h2>
-        <article>
-            <div className="img_proyecto">
-                <img></img>
-            </div>
-            <div>
-                <h3>Proyecto y algo mas</h3>
-                <div className="proyectos">
-                <ul>
-                    <li>Logos con que tecnologia hice el proyecto</li>
-                </ul>
-                    <p>Texto texto texot text texot teoxt rteo</p>
+        <h2 id="mostrar">Proyectos</h2>
+        <article className="proyectos">
+            {proyectos.map((proyecto)=>(
+                <div className="proyecto">
+                <img src={proyecto.img} alt={proyecto.img_alt}/>
+                <h3>{proyecto.titulo}</h3>
+                    <p>{proyecto.desc}</p>
                     <footer>
                         <ul>
-                            <a href="https://github.com">Link de github</a>
+                            <li><a href={proyecto.url}>Link de github</a></li>
+                            <li><a href={proyecto.url_proyecto}>Link de pagina web proyecto</a></li>
                         </ul>
                     </footer>
                 </div>
-
-            </div>
-
+            ))}
         </article>
     </div>
     )

@@ -3,6 +3,7 @@ body{
   color: white;
   margin: 2vw;
   font-family: Courier, sans-serif;
+  box-sizing: border-box;
 }
 .links{
   font-size:24px;
@@ -16,12 +17,40 @@ body{
   margin-left: 1em;
   text-decoration: none;
 }
+.link:hover{
+  color:green;
+}
 .perfil{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills{
-  display:block;
-  background-color: red;
+h2{
+  color: yellow;
+  text-align: center;
+}
+.proyectos{
+  display: grid;
+  justify-items: center;
+  gap:100px;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.proyecto{
+  background-color: #080507;
+  position:relative;
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+}
+.proyecto ul{
+  display: flex;
+  flex-direction: row;
+  gap:1em
+}
+.proyecto img{
+  height: 200px;
+  width:99%;
 }

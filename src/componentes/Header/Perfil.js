@@ -5,7 +5,7 @@ function Perfil(){
             <h1>¡Hola! soy Sebastián Márquez</h1>
             <h3>Frontend Developer</h3>
                 <div>
-                    <p>Soy estudiante de ingenieria en Computación y me estoy adentrando en el mundo del <span>desarollo web</span></p>
+                    <p>Estudiante de ingenieria en Computación el cual se está adentrando en el mundo del <span>desarollo web</span>.</p>
                 </div>
             </div>
     )
