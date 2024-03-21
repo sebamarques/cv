@@ -1,11 +1,11 @@
-import Links from "./Links"
 import Perfil from "./Perfil"
+import Link from "./Links"
 function Header(){
     return(
-    <div id="inicio">
-    <Links></Links>
-    <Perfil></Perfil>
-    </div>
+        <div>
+            <Link></Link>
+            <Perfil></Perfil>
+        </div>
     )
 }
 export default Header;

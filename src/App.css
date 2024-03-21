@@ -1,61 +1,63 @@
 body{
-  background-color: #080517;
+  margin:1em;
+  background:linear-gradient(#080517 10%,#0c0724);
   color: white;
-  margin: 2vw;
-  font-family: Courier, sans-serif;
-  box-sizing: border-box;
 }
-.links{
-  font-size:24px;
+/*Codigo del header*/
+.main-nav ul{
+  display: flex;
   list-style: none;
-  display:flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
-.link{
-  color: white;
-  border-style: none;
-  margin-left: 1em;
+.main-nav li{
+  padding-right: 15px;
+  font-size: 2em;
+}
+.main-nav a{
   text-decoration: none;
+  color: white;
 }
-.link:hover{
-  color:green;
+.main-nav a:hover{
+  color: yellow
 }
-.perfil{
+/*Codigo del Perfil*/
+.informacion{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.informacion img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+/*Codigo de Main*/
+main{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+  width: 98%;
+  height: 90%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.main-content img{
+  max-width: 100%;
+  height: 200px;
+}
+
+/*Estilos "random"*/
 h2{
   color: yellow;
   text-align: center;
 }
-.proyectos{
-  display: grid;
-  justify-items: center;
-  gap:100px;
-  grid-template-columns: repeat(2,1fr);
-}
-
-.proyecto{
-  background-color: #080507;
-  position:relative;
-  padding:10px;
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: large;
-}
-.proyecto ul{
-  display: flex;
-  flex-direction: row;
-  gap:1em
-}
-.proyecto img{
-  height: 200px;
-  width:99%;
-}
-.footer{
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  background-color: red;
+h4{
+  color:yellow;
 }

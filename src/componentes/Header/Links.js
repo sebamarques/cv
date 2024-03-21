@@ -1,16 +1,23 @@
-function Links(){
+function Link(){
     return(
-        <>
-        <nav>
-            <ul className="links">
-                <li>
-                    <a className="link" href="#inicio">Inicio</a>
-                    <a className="link" href="#mostrar">Proyectos</a>
-                    <a className="link" href="#footer">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        </>
+        <div>
+            <nav className="main-nav">
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a>Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     )
 }
-export default Links;
+export default Link;

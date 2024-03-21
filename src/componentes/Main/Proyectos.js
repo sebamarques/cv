@@ -1,57 +1,35 @@
-import gorro from "../../img/gorro.jpg"
-import hoodie from "../../img/hoodie.jpg"
-import lapicera from "../../img/Lapiceras.jpeg"
-import lapices from "../../img/Lapices.jpg"
-function Proyectos(){
-    const proyectos=[
-    {
-        img:gorro,
-        titulo:"Ecommerce",
-        url:"",
-        img_alt:"Imagen del ecommerce",
-        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
-    },
-    {
-        img:hoodie,
-        titulo:"Restaurante",
-        url:"",
-        img_alt:"Imagen de la paginad web del restaurante",
-        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
-    },
-    {
-        img:lapicera,
-        titulo:"ReciclaYa!",
-        url:"",
-        img_alt:"Imagen de sitio web Ecologico",
-        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
-    },
-    {
-        img:lapices,
-        titulo:"Reiki",
-        url:"",
-        img_alt:"Imagen de sitio web reiki",
-        desc:"Hola soy una descripcion de una pagina web que cree te ggustaria visitrala??"
-    }
-]
+import gorro from "../../img/IMG_20210922_103730.jpg"
+function Proyecto(){
     return(
-    <div>
-        <h2 id="mostrar">Proyectos</h2>
-        <article className="proyectos">
-            {proyectos.map((proyecto)=>(
-                <div className="proyecto">
-                <img src={proyecto.img} alt={proyecto.img_alt}/>
-                <h3>{proyecto.titulo}</h3>
-                    <p>{proyecto.desc}</p>
-                    <footer>
-                        <ul>
-                            <li><a href={proyecto.url}>Link de github</a></li>
-                            <li><a href={proyecto.url_proyecto}>Link de pagina web proyecto</a></li>
-                        </ul>
-                    </footer>
-                </div>
-            ))}
-        </article>
-    </div>
+        <div>
+            <h2>Proyectos</h2>
+            <main>
+                <article className="main-content">
+                    <img alt="imagen de ReciclaYa!" src={gorro}></img>
+                    <h3>ReciclaYa!</h3>
+                    <p>descripcion de reciclaYa</p>
+                    <a href="https://sebamarques.github.io/ReciclaYa">Ver proyecto</a>
+                </article>
+                <article className="main-content">
+                    <img alt="imagen de reiki" src={gorro}></img>
+                    <h3>Reiki</h3>
+                    <p>descripcion de Reiki</p>
+                    <a href="https://sebamarques.github.io/reiki">Ver proyecto</a>
+                </article>
+                <article className="main-content">
+                    <img alt="imagen de ecommerce" src={gorro}></img>
+                    <h3>Ecommerce</h3>
+                    <p>descripcion de ecommerce</p>
+                    <a href="https://sebamarques.github.io/ecommerce">Ver proyecto</a>
+                </article>
+                <article className="main-content">
+                    <img alt="imagen de Restaurante!" src={gorro}></img>
+                    <h3>Restaurante</h3>
+                    <p>descripcion de restaurante</p>
+                    <a href="https://sebamarques.github.io/restaurante">Ver proyecto</a>
+                </article>
+            </main>
+        </div>
     )
 }
-export default Proyectos;
+export default Proyecto;
