@@ -54,3 +54,8 @@ h2{
   height: 200px;
   width:99%;
 }
+.footer{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: red;
+}
