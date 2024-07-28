@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome,faContactCard,faCode,faPerson} from '@fortawesome/free-solid-svg-icons'
+import Redes from "./Redes"
 function Header(){
     let links = [
         {   id:1,
@@ -29,13 +30,13 @@ function Header(){
     ]
     return(
         <div>
-            <img alt ="Imagen sebastian marquez"src="../img/IMG_20210922_103730.jpg"/>
-            <div className="links">{
+            <div className="links">
+                <img alt ="Imagen Sebastián Márquez"src="../img/IMG_20210922_103730.jpg"/>{
                 links.map(link =>(
-                    <Link key={link.id}to={link.url} className="link">{link.icono}{link.nombre}</Link>
-                    ))
-                }
+                    <Link key={link.id}to={link.url} className="link">{link.icono} {link.nombre}</Link>
+                ))}
             </div>
+            
         </div>
     )
 }

@@ -2,7 +2,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #f4deff;
+    background-color: #ae50dd;
+    font-family: "Poppins", sans-serif;
 }
 .comienzo{
     display: grid;
@@ -14,24 +15,31 @@ body{
 .links{
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    height: 70vh;
+    width: 240px;
+    height: 600px;
     align-items: center;
     justify-content: center;
-    background-color: #ae50dd;
-    border-radius: 50px;
+    background-color: #d37dfe;
+    border: solid 1px white;
+    border-radius: 20px;
+    margin: 25px;
 }
 .link{
     display: flex;
     color: black;
     text-decoration: none;
     transition: all 0.6s;
-    margin: 1vh 1vw;
-    width:30%;
+    margin: 5px;
+    width:50%;
+    height: 5%;
+    justify-content: space-evenly;
     align-items: center;
+
 }
 .link:hover{
     color: white;
+    background-color: #d88dff;
+    border-radius: 4px;
 }
 /*Inicio*/
 .inicio{
@@ -58,12 +66,48 @@ body{
     color: black;
 }
 /*Info*/
+.info{
+    display: grid;
+    justify-content:center;
+    justify-items: center;
+    background-color: #d37dfe;
+    width: 65vw;
+    height: 65vh;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+.tecnologias{
+
+}
+.tecnologia{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+}
+.icono{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: ease 1s;
+}
+.icono:hover{
+    background-color: white;
+}
 
 
 /*Proyectos*/
 .proyectos{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-color: #d37dfe;
+    height: 75vh;
+    width: 70vw;
+    border-radius: 15px;
+    align-items: center;
 }
-
+.proyecto{
+    display: grid;
+    justify-items: center;
+    gap: 10%;
+}
 /*Contacto*/
