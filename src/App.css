@@ -1,63 +1,69 @@
+/*General*/
 body{
-  margin:1em;
-  background:linear-gradient(#080517 10%,#0c0724);
-  color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #f4deff;
 }
-/*Codigo del header*/
-.main-nav ul{
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  justify-content: flex-end;
+.comienzo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100vw;
+    height: 100vh;
 }
-.main-nav li{
-  padding-right: 15px;
-  font-size: 2em;
+/*Navbar lateral*/
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ae50dd;
+    border-radius: 50px;
 }
-.main-nav a{
-  text-decoration: none;
-  color: white;
+.link{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    transition: all 0.6s;
+    margin: 1vh 1vw;
+    width:30%;
+    align-items: center;
 }
-.main-nav a:hover{
-  color: yellow
+.link:hover{
+    color: white;
 }
-/*Codigo del Perfil*/
-.informacion{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*Inicio*/
+.inicio{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
 }
-.informacion img{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+.presentacion{
+
 }
-/*Codigo de Main*/
-main{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+.redes{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 5vh;
+    background-color: #ae50dd;
+    margin-bottom: 2%;
 }
-.main-content{
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  padding: 10px;
-  width: 98%;
-  height: 90%;
-  margin-bottom: 1em;
-  text-align: center;
+.redes a{
+    width: 10vw;
+    color: white;
+    transition: all 1s;
 }
-.main-content img{
-  max-width: 100%;
-  height: 200px;
+.redes a:hover{
+    color: black;
+}
+/*Info*/
+
+
+/*Proyectos*/
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
-/*Estilos "random"*/
-h2{
-  color: yellow;
-  text-align: center;
-}
-h4{
-  color:yellow;
-}
+/*Contacto*/
