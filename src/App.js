@@ -5,6 +5,7 @@ import Proyectos from "./componentes/Proyectos"
 import Info from "./componentes/Info"
 import Inicio from "./componentes/Inicio"
 import Error from "./componentes/Error"
+import Redes from "./componentes/Redes"
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="*" element={<Error/>}></Route>
       </Routes>
     </Router>
+        <Redes/>
     </div>
   );
 }

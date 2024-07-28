@@ -1,13 +1,14 @@
 function Contacto(){
     return(
-        <>
+        <div className="contacto">
+            <h1>Contacto</h1>
         <form>
-            <input type="text" placeholder="Nombre y apellido"/>
+            <input type="text" placeholder="Nombre y apellido" required/>
             <input type="mail" placeholder="Mail" required/>
-            <input type="textarea"></input>
-        
+            <textarea required>Ingresa tu consulta</textarea>
+            <button>Enviar</button>
         </form>
-        </>
+        </div>
     )
 }
 

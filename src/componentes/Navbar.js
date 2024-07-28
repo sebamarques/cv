@@ -33,11 +33,10 @@ function Header(){
             <div className="links">
                 <img alt ="Imagen Sebastián Márquez"src="../img/IMG_20210922_103730.jpg"/>{
                 links.map(link =>(
-                    <Link key={link.id}to={link.url} className="link">{link.icono} {link.nombre}</Link>
+                    <Link key={link.id}to={link.url} className="link"><div>{link.icono}</div> {link.nombre}</Link>
                 ))}
             </div>
-            
         </div>
-    )
+)
 }
 export default Header

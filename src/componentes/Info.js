@@ -5,7 +5,7 @@ function Info(){
     return(
         <>
         <div className='info'>
-            <div className='acerca de mi'>
+            <div className='acerca-de-mi'>
                 <h2>Acerca de mi</h2>
                 <p>Me apasiona la tecnologia desde una temprana edad, desde entonces quiero trabajar con algo 
                     relacionado a esto, es por eso que comence a estudiar ingenieria en computacion y soy autodidacta, 
