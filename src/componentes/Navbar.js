@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome,faContactCard,faCode,faPerson} from '@fortawesome/free-solid-svg-icons'
-import Redes from "./Redes"
 function Header(){
     let links = [
         {   id:1,
