@@ -8,7 +8,7 @@ function Inicio(){
             <img alt="Imagen Sebastian Marquez" src=""></img>
             <p>Soy Sebastián Márquez</p>
         </div>
-        <div>
+        <div className="profesion">
             {useProfesion(profesion)}
         </div>
     </main>
