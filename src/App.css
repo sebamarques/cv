@@ -1,247 +1,76 @@
-/*General*/
 body{
     margin: 0;
     padding: 0;
-    background-color: #e5e7eb;
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    background-color: #525252;
+    color: white;
+    font-family: 'Poppins';
 }
 .comienzo{
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    justify-items: center;
 }
+/*Navbar*/
+.rutas{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 100vw;
+    justify-content: end;
+}
+.rutas a{
+    color: white;
+    margin-top: 10px;
+    height: 1vh;
+    font-size: 2em;
+    padding-right: 1em;
+    transition: all ease 0.5s;
+    text-decoration: none;
+}
+.rutas a:hover{
+    color: #67d097;
 
-/*Navbar lateral*/
-.links{
+}
+/*Inicio*/
+
+.card{
     display: flex;
     flex-direction: column;
-    width: 17vw;
-    height: 85vh;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    margin: 4vh;
-    border: solid 1px;
-    box-shadow: 0px 0px 25px #222;
-    background-color: #8c61b8;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 50px;
+    background: #282a29;
 }
-
-.link{
-    display: flex;
-    color: black;
-    text-decoration: none;
-    transition: all 0.6s;
-    margin: 5px;
-    padding: 10px;
-    width:50%;
-    height: 5%;
-    align-items: center;
-    border-radius: 5px;
+.info{
+    justify-items: center;
 }
-.link:hover{
-    color: white;
-    background-color: #b27ce7;
-    border-radius: 4px;
-    
+.info h1{
+    font-size: 2em;
+    color: red;
 }
-.seleccion{
-    display: flex;
-    color: black;
-    text-decoration: none;
-    transition: all 0.6s;
-    margin: 5px;
-    padding: 10px;
-    width:50%;
-    height: 5%;
-    align-items: center;
-    border-radius: 5px;
-    color: white;
-    background-color: #b27ce7;
-}
-
 .redes{
     display: flex;
     flex-direction: row;
-    border: solid 1px;
-    justify-content: space-around;
-    border-radius: 20px;
-    box-shadow: 0px 0px 25px #222;
-    background-color: #8c61b8;
-    /*Fondo es un "difuminado" blanco*/
 }
+.redes ul{
+    list-style: none;
+    border: solid 1px white;
+    transition: all ease 0.4s;
+}
+.redes ul:hover{
+    background-color: #67d097;
+}
+
 .redes a{
-    color: black;
-    transition: all 1s;
-    font-size: xx-large;
-}
-.redes a:hover{
     color: white;
-    background-color: #b27ce7;
-}
-/*Inicio*/
-.inicio{
-    display: grid;
-    grid-template-columns: 1fr;
-    border: solid 1px;
-    grid-row: 1fr 1fr;
-    width: 70vw;
-    height: 80vh;
-    margin-top: 4vh;
-    border-radius: 15px;
-    box-shadow: 0px 0px 25px #222;
-    background-color: #8c61b8;
-}
-.presentacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-main h2{
-    text-align: center;
-}
-.profesion h2{
-    background-color: none;
-}
-/*Info*/
-.info{
-    display: grid;
-    justify-content:center;
-    justify-items: center;
-    border-radius: 15px;
-    box-shadow: 0px 0px 25px #222;
-    border: solid 1px;
-    background-color: #8c61b8;
-    width: 70vw;
-    height: 80vh;
-    margin-top: 4vh;
-}
-.acerca-de-mi{
-    width: 75%;
-}
-.tecnologias{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: large;
-    width: 100%;
-}
-.tecnologia{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: space-between;
-}
-.icono{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
 
-
+}
+/*Informacion*/
 /*Proyectos*/
-.proyectos{
-    border-radius: 15px;
-    box-shadow: 0px 0px 25px #222;
-    background-color: #8c61b8;
-    border: solid 1px;
-    width: 70vw;
-    height: 80vh;
-    align-items: center;
-    justify-items: center;
-    margin-top: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-}
-.proyecto{
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    gap: 10%;
-    height: 80%;
-    width: 80%;
-
-}
-.proyecto a{
-    text-decoration: none;
-    color: white;
-    transition: all 1s;
-}
-.proyecto a:hover{
-    color: black;
-}
-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
 /*Contacto*/
-.contacto{
-    border-radius: 15px;
-    border: solid 1px black;
-    box-shadow: 0px 0px 25px #222;
-    background-color: #8c61b8;
-    display: grid;
-    margin-top: 4vh;
-    justify-items: center;
-    align-content: center;
-    grid-template-columns: 1fr;
-    width: 70vw;
-    height: 80vh;
-}
-.contacto form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 80%;
-}
-input{
-    font-family: 'Poppins';
-    font-size: large;
-    border: solid 1px black;
-    border-radius: 10px;
-    background-color: #8c61b8;
-    margin: 10px 0px;
-    padding: 10px;
-
-}
-input::placeholder{
-    color: black
-}
-.contacto form textarea{
-    font-family: 'Poppins';
-    font-size:small;
-    padding: 10px;
-    background-color: #8c61b8;
-    border: solid 1px black;
-    border-radius: 10px;
-}
-.contacto form textarea::placeholder{
-    color: black;
-    font-size: large;
-}
-.contacto form button{
-    font-family: 'Poppins';
-    font-size: medium;
-    width: 30%;
-    background-color: #8c61b8;
-    border: solid 1px black;
-    border-radius: 5px;
-    margin-top: 5px;
-    transition: all ease 1s;
-}
-.contacto form button:hover{
-    box-shadow: 0px 0px 25px #222;
-    background-color: #b27ce7;
-    color: white;
-}
