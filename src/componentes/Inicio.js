@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faYoutube, faInstagram, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import hero from "../img/IMG_20240725_112302.jpg"
 function Inicio() {
   const redes = [
     {id:1, url: "https://youtube.com", icono: faYoutube },
@@ -15,14 +15,14 @@ function Inicio() {
             <main className="card">
                 <section>
                     <div className="info">
-                        <img alt="Imagen de Sebastián Márquez"></img>
+                        <img alt="Imagen de Sebastián Márquez" src={hero}></img>
                         <h1>Sebastián Márquez</h1>
                         <p>Desarollador de software</p>
                     </div>
                     <div className="redes">
                         {redes.map(red=>
                             <ul key={red.id}>
-                                <li><a href={red.url}><FontAwesomeIcon icon={red.icono} /></a></li>
+                                <li><a href={red.url}><FontAwesomeIcon icon={red.icono} size="2x"/></a></li>
                             </ul>
                         )}
                     </div>
